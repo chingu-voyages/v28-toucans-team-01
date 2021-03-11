@@ -93,27 +93,26 @@ const myQuestions = [
         }
     },
     {
-        question: `What are you most likely to eat after a stressful day?`
+        question: `How do you prefer to dine?`,
         answers:
         {
-            a: `Popcorn or chips`,
-            b: `A crisp salad`,
-            c: `Everything in sight`,
-            d: `Something sweet`
+            a: `At a restaurant`,
+            b: `Takeout`,
+            c: `Deliver to your door`,
+            d: `Cook at home`
         }
     },
     {
-        question: `What are you most likely to eat after a stressful day?`
+        question: `Choose your favorite meal:`,
         answers:
         {
-            a: `Popcorn or chips`,
-            b: `A crisp salad`,
-            c: `Everything in sight`,
-            d: `Something sweet`
+            a: `Steak, rare`,
+            b: `All greens, please`,
+            c: `I prefer a balanced meal`
         }
     },
     {
-        question: `What are you most likely to eat after a stressful day?`
+        question: `Let's get some exercise`
         answers:
         {
             a: `Popcorn or chips`,
