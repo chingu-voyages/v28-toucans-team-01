@@ -9,7 +9,7 @@
 }
 
 #about {
-  margin-right: 34rem;
+  margin-right: 32rem;
 }
 
 #about:hover {
@@ -28,4 +28,52 @@
 
 #share i:hover {
   color: #11f680;
+}
+
+/* carousel */
+.title-description {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.quiz-carousel {
+  border-radius: 15px;
+  border: 3px solid black;
+  margin: 2rem 10rem;
+  background-color: gray;
+}
+
+.question {
+  margin: auto;
+  padding: 4rem;
+  width: 20rem;
+}
+
+.conclusion {
+  margin: auto;
+  padding: 4rem;
+  width: 24rem;
+}
+
+/* Carousel Indicators */
+
+.carousel-indicators-numbers .ind-num {
+  color: black;
+  font-size: 14px;
+  text-indent: 0;
+  text-align: center;
+  line-height: 30px;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  transition: all 0.25s ease;
+}
+.carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
 }
