@@ -1,0 +1,31 @@
+/* Navbar */
+/* remember that you are using ml-auto in the div with the links to align them on the right side of the navbar*/
+#home {
+  margin-left: 4rem;
+}
+
+#home:hover {
+  color: #11f680;
+}
+
+#about {
+  margin-right: 34rem;
+}
+
+#about:hover {
+  color: #11f680;
+}
+
+#share {
+  color: white;
+  margin-right: 4rem;
+}
+
+#share i {
+  font-size: 1.1rem;
+  margin: 0 0.3rem;
+}
+
+#share i:hover {
+  color: #11f680;
+}
