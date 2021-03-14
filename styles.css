@@ -37,22 +37,28 @@
 }
 
 .quiz-carousel {
-  border-radius: 15px;
   border: 3px solid black;
-  margin: 2rem 10rem;
-  background-color: gray;
+  margin: 2rem 14rem;
 }
 
 .question {
   margin: auto;
   padding: 4rem;
-  width: 20rem;
+  width: 24rem;
 }
 
 .conclusion {
   margin: auto;
   padding: 4rem;
   width: 24rem;
+}
+
+.carousel-control-prev i {
+  color: black;
+}
+
+.carousel-control-next i {
+  color: black;
 }
 
 /* Carousel Indicators */
@@ -75,5 +81,5 @@
   margin: 0 2px;
   width: 30px;
   height: 30px;
-  background-color: blue;
+  background-color: #11f680;
 }
