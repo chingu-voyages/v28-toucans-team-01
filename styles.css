@@ -45,12 +45,14 @@
   margin: auto;
   padding: 4rem;
   width: 24rem;
+  height: 28rem;
 }
 
 .conclusion {
   margin: auto;
   padding: 4rem;
   width: 24rem;
+  height: 28rem
 }
 
 .carousel-control-prev i {
@@ -61,8 +63,7 @@
   color: black;
 }
 
-/* Carousel Indicators */
-
+/* Carousel Indicator Numbers*/
 .carousel-indicators-numbers .ind-num {
   color: black;
   font-size: 14px;
@@ -82,4 +83,8 @@
   width: 30px;
   height: 30px;
   background-color: #11f680;
+}
+
+.reset-button {
+  margin-left: 1.3rem;
 }
