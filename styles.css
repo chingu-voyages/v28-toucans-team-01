@@ -88,3 +88,9 @@
 .reset-button {
   margin-left: 1.3rem;
 }
+
+/* Donate Section */
+.donation {
+  text-align: center;
+  padding-bottom: 2rem;
+}
