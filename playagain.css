@@ -1,0 +1,13 @@
+.title-card {
+	text-align: center;
+}
+
+.playagain {
+	margin-top: 250px;
+	text-align: center;
+}
+
+.exit-game {
+	display: none;
+	text-align: center;
+}
