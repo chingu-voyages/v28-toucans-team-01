@@ -1,0 +1,39 @@
+body img {
+            filter: blur(2px);
+            height: 110vh;
+            background-size: 1500px;
+            width: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+
+}
+
+.container {
+	margin: 10px;
+	height: 75vh;
+	width: 30%;
+	background: rgba(0, 0, 0, .6);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container h1 {
+	color: white;
+}
+
+.container p {
+	color: white;
+}
+
+.donation {
+	margin: 10px;
+	text-align: center;
+}
+
+.returnhome {
+	margin: 80px;
+	text-align: center;
+}
