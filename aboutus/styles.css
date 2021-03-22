@@ -50,9 +50,13 @@
 
 .conclusion {
   margin: auto;
-  padding: 4rem;
+  padding: 1rem;
   width: 24rem;
-  height: 28rem
+  height: 40rem;
+}
+
+.conclusion h2 {
+  text-align: center;
 }
 
 .carousel-control-prev i {
@@ -85,12 +89,6 @@
   background-color: #11f680;
 }
 
-.reset-button {
-  margin-left: 1.3rem;
-}
-
-/* Donate Section */
-.donation {
+.play-again {
   text-align: center;
-  padding-bottom: 2rem;
 }

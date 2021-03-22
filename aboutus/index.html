@@ -18,7 +18,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" id="about" href="aboutus.html">About Us <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" id="about" href="file:///C:/Users/mafm2/Desktop/v28-toucans-team-01/aboutus/aboutus.html">About Us / Donate <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" id="share" href="#">Share! <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></a>
         </div>
       </div>
@@ -28,8 +28,8 @@
     <div class="container">
       <!-- Title and description -->
       <div class="title-description">
-        <h1>Animal Avatar Generator</h1>
-        <p>Need a profile picture? Take our quiz and find your personalized animal avatar.</p>
+        <h1>The Wild Avatar Kingdom</h1>
+        <p>Looking for a new profile picture? Take our quiz and find your personalized animal avatar!</p>
       </div>
     </div>
 
@@ -48,9 +48,6 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="7" class="ind-num">8</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="8" class="ind-num">9</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="9" class="ind-num">End</li>
-            <div class="reset-button">
-              <button type="button" class="btn btn-outline-dark">Reset</button>
-            </div>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -145,10 +142,9 @@
 
             <div class="carousel-item">
               <div class="conclusion">
-                <h2>Finished Messaging</h2>
-                <p>Message explaining how their answer was chosen</p>
-                <img src="" alt="animal-img">
-                <p>Explanation of what animal was selected for them</p>
+                <h2>The EAGLE</h2>
+                <img src="" alt="animal.jpg">
+                <p>Stoic and independent, confident and brave, you can handle most any challenge before you!</p>
               </div>
             </div>
           </div>
@@ -167,13 +163,26 @@
         </div>
       </div>
 
-      <div class="donation">
-        <p>Had a good experience? Consider donating to the World Wildlife Fund!</p>
-        <button type="button" class="btn btn-outline-dark">Donate</button>
+      <div class="play-again">
+        <form>
+          <p>Would you like to play the quiz again?</p>
+          <input id="rd1" type="radio" value="yes">Yes</input><br/>
+          <input id="rd2" type="radio" value="no">No</input><br/>
+          <button onclick="fn1()" id="btn1">Submit</button>
+        </form>   
+        <script>
+          function fn1() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+
+            if(rd1.checked==true) 
+                document.getElementById("home").reset();
+            else if(rd2.checked==true)
+                document.write("Your avatar looks amazing! You can download your new avatar here");
+            }
+          </script>
       </div>
-    </div>
-
-
+  </div>
 
   <!-- Bootstrap JavaScript CDN -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
