@@ -1,5 +1,5 @@
 /* Navbar */
-/* remember that you are using ml-auto in the div with the links to align them on the right side of the navbar*/
+/* remember that we are using ml-auto in the div with the links to align the links on the right side of the navbar*/
 #home {
   margin-left: 4rem;
 }
@@ -93,4 +93,17 @@
 .donation {
   text-align: center;
   padding-bottom: 2rem;
+}
+
+/* Conclusion Slide */
+#conclusion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#explanation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

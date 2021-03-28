@@ -1,3 +1,136 @@
+//Generate Random numbers
+var nums = [0,1,2,3,4,5,6,7,8],
+    ranNums = [],
+    i = nums.length,
+    j = 0;
+
+while (i--) {
+    j = Math.floor(Math.random() * (i+1));
+    ranNums.push(nums[j]);
+    nums.splice(j,1);
+}
+
+
+//Questions and answers arrays
+var questions = [
+  "What is your favorite way to travel?",
+  "What's your favorite season of the year?",
+  "How do you prefer to dine?",
+  "Choose your favorite meal:",
+  "Let's get some exercise! Choose an activity:",
+  "What are you most likely to eat after a stressful day?",
+  "When you have something exciting to share, how do you tell people?",
+  "Who is your ideal mentor?",
+  "How would you describe your perfect home?"
+];
+// //
+var aAnswers = [
+  "airplane",
+  "Spring",
+  "at a restaurant",
+  "steak, rare",
+  "skiing",
+  "nothing",
+  "I jump around",
+  "Kermit the Frog",
+  "Waterfront property"
+];
+//
+var bAnswers = [
+  "boat",
+  "Summer",
+  "takeout",
+  "all greens, please",
+  "surfing",
+  "vegan grilled cheese",
+  "I keep it to myself",
+  "Mark Zuckerberg",
+  "Very tidy"
+];
+//
+var cAnswers = [
+  "car",
+  "Autumn",
+  "delivery",
+  "seafood",
+  "boxing",
+  "something sweet",
+  "I grab everyone's attention",
+  "Professor Dumbledore",
+  "Cozy and warm"
+];
+//
+var dAnswers = [
+  "bicylce or walk",
+  "Winter",
+  "cook at home",
+  "I prefer a balanced meal",
+  "trampoline",
+  "everything in sight",
+  "I spread the news like crop disease",
+  "Beyonce",
+  "Kind of messy but has a good view"
+];
+
+
+// Insert Quiz Questions
+document.getElementById("q1").innerHTML = questions[ranNums[0]];
+document.getElementById("oneA").innerHTML = aAnswers[ranNums[0]];
+document.getElementById("oneB").innerHTML = bAnswers[ranNums[0]];
+document.getElementById("oneC").innerHTML = cAnswers[ranNums[0]];
+document.getElementById("oneD").innerHTML = dAnswers[ranNums[0]];
+//
+document.getElementById("q2").innerHTML = questions[ranNums[1]];
+document.getElementById("twoA").innerHTML = aAnswers[ranNums[1]];
+document.getElementById("twoB").innerHTML = bAnswers[ranNums[1]];
+document.getElementById("twoC").innerHTML = cAnswers[ranNums[1]];
+document.getElementById("twoD").innerHTML = dAnswers[ranNums[1]];
+//
+document.getElementById("q3").innerHTML = questions[ranNums[2]];
+document.getElementById("threeA").innerHTML = aAnswers[ranNums[2]];
+document.getElementById("threeB").innerHTML = bAnswers[ranNums[2]];
+document.getElementById("threeC").innerHTML = cAnswers[ranNums[2]];
+document.getElementById("threeD").innerHTML = dAnswers[ranNums[2]];
+//
+//
+document.getElementById("q4").innerHTML = questions[ranNums[3]];
+document.getElementById("fourA").innerHTML = aAnswers[ranNums[3]];
+document.getElementById("fourB").innerHTML = bAnswers[ranNums[3]];
+document.getElementById("fourC").innerHTML = cAnswers[ranNums[3]];
+document.getElementById("fourD").innerHTML = dAnswers[ranNums[3]];
+//
+document.getElementById("q5").innerHTML = questions[ranNums[4]];
+document.getElementById("fiveA").innerHTML = aAnswers[ranNums[4]];
+document.getElementById("fiveB").innerHTML = bAnswers[ranNums[4]];
+document.getElementById("fiveC").innerHTML = cAnswers[ranNums[4]];
+document.getElementById("fiveD").innerHTML = dAnswers[ranNums[4]];
+//
+document.getElementById("q6").innerHTML = questions[ranNums[5]];
+document.getElementById("sixA").innerHTML = aAnswers[ranNums[5]];
+document.getElementById("sixB").innerHTML = bAnswers[ranNums[5]];
+document.getElementById("sixC").innerHTML = cAnswers[ranNums[5]];
+document.getElementById("sixD").innerHTML = dAnswers[ranNums[5]];
+//
+//
+document.getElementById("q7").innerHTML = questions[ranNums[6]];
+document.getElementById("sevenA").innerHTML = aAnswers[ranNums[6]];
+document.getElementById("sevenB").innerHTML = bAnswers[ranNums[6]];
+document.getElementById("sevenC").innerHTML = cAnswers[ranNums[6]];
+document.getElementById("sevenD").innerHTML = dAnswers[ranNums[6]];
+//
+document.getElementById("q8").innerHTML = questions[ranNums[7]];
+document.getElementById("eightA").innerHTML = aAnswers[ranNums[7]];
+document.getElementById("eightB").innerHTML = bAnswers[ranNums[7]];
+document.getElementById("eightC").innerHTML = cAnswers[ranNums[7]];
+document.getElementById("eightD").innerHTML = dAnswers[ranNums[7]];
+//
+document.getElementById("q9").innerHTML = questions[ranNums[8]];
+document.getElementById("nineA").innerHTML = aAnswers[ranNums[8]];
+document.getElementById("nineB").innerHTML = bAnswers[ranNums[8]];
+document.getElementById("nineC").innerHTML = cAnswers[ranNums[8]];
+document.getElementById("nineD").innerHTML = dAnswers[ranNums[8]];
+
+// Check quiz questions
 function check(){
 
   var question1 = document.slide1.question1.value;
@@ -9,11 +142,11 @@ function check(){
   var question7 = document.slide7.question7.value;
   var question8 = document.slide8.question8.value;
   var question9 = document.slide9.question9.value;
+
   var aChosen = 0;
   var bChosen = 0;
   var cChosen = 0;
   var dChosen = 0;
-  // var animal = "";
 
 
   // Question 1
@@ -183,7 +316,7 @@ function check(){
   } else if (max == dChosen) {
     type = 3;
   } else {
-    alert("error.");
+    alert("Error.");
   }
 
 
