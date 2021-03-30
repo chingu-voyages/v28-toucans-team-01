@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animal Avatar Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- font awesome CDN  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" id="home" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" id="about" href="aboutus.html">About Us / Donate<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" id="share" href="#">Share! <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container">
+      <!-- Title and description -->
+      <div class="title-description">
+        <h1>The Wild Avatar Kingdom</h1>
+        <p>Need a profile picture? Take our quiz and find your personalized animal avatar!</p>
+      </div>
+    </div>
+
+    <!-- Bootstrap Carousel for Questions -->
+    <div class="container">
+      <div class="quiz-carousel">
+        <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators carousel-indicators-numbers">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind-num">1</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1" class="ind-num">2</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2" class="ind-num">3</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="ind-num">4</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4" class="ind-num">5</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5" class="ind-num">6</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6" class="ind-num">7</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7" class="ind-num">8</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8" class="ind-num">9</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9" class="ind-num">End</li>
+ <!--           <div class="reset-button">
+              <button type="button" class="btn btn-outline-dark" onClick="window.location.reload();">Reset</button>
+            </div>
+-->
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="question">
+                <form id="slide1" name="slide1">
+                  <h3 id="q1"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="oneA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="oneB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="oneC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="oneD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide2" name="slide2">
+                  <h3 id="q2"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="twoA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="twoB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="twoC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="twoD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide3" name="slide3">
+                  <h3 id="q3"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="threeA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="threeB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="threeC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="threeD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide4" name="slide4">
+                  <h3 id="q4"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="fourA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="fourB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="fourC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="fourD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide5" name="slide5">
+                  <h3 id="q5"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="fiveA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="fiveB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="fiveC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="fiveD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide6" name="slide6">
+                  <h3 id="q6"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="sixA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="sixB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="sixC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="sixD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide7" name="slide7">
+                  <h3 id="q7"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="sevenA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="sevenB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="sevenC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="sevenD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide8" name="slide8">
+                  <h3 id="q8"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="eightA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="eightB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="eightC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="eightD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="question">
+                <form id="slide9" name="slide9">
+                  <h3 id="q9"></h3>
+                  <input type="radio" name="question1" value="a"> <span id="nineA"></span> <br>
+                  <input type="radio" name="question1" value="b"> <span id="nineB"></span> <br>
+                  <input type="radio" name="question1" value="c"> <span id="nineC"></span> <br>
+                  <input type="radio" name="question1" value="d"> <span id="nineD"></span> <br>
+                </form>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div id="conclusion">
+                <p id="explanation"></p>
+                <!-- <p>Message explaining how their answer was chosen</p> -->
+                <!-- <img src="" alt="animal-img"> -->
+                <!-- <p>Explanation of what animal was selected for them</p> -->
+                <input class="btn btn-outline-dark" id="submitButton" type="button" value="Find Your Animal" onclick="check();">
+              </div>
+            </div>
+
+          </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <!-- <span id="prev-arrow" class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+              <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    
+<!-- RESET BUTTONS -->    
+    <div class="play-again" id="play-again">
+       <form>
+        <p>Would you like to try the quiz again?</p>
+          <input id="rd1" type="radio" value="yes">Yes</input><br/>
+          <input id="rd2" type="radio" value="no">No</input><br/>
+          <button onclick="fn1()" id="btn1">Submit</button>
+        </form>
+      </div>
+      <script>
+            /*document.getElementById("play-again").style.visibility = "hidden";*/
+            function fn1() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+
+            if(rd1.checked==true) 
+              document.getElementById("home").reset();
+            else if(rd2.checked==true)
+              document.write("Your avatar looks amazing! You can download your new avatar here");
+            else
+                alert ("please choose yes or no");}              
+      </script>
+    </div>
+
+    <div class="donation">
+        <p>Had a good experience? Consider donating to the World Wildlife Fund!</p>
+        <a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">
+        <button type="button" class="btn btn-outline-dark">Donate</button></a>
+      </div>
+    </div>
+
+  <!-- Javascript file -->
+  <script src="main.js"></script>
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
