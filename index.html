@@ -13,13 +13,13 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" id="home" href="#">Home</a>
+      <a class="navbar-brand" id="home" href="index.html">Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" id="about" href="#">About Us <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" id="about" href="aboutus.html">About Us / Donate<span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" id="share" href="#">Share! <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></a>
         </div>
       </div>
@@ -29,8 +29,8 @@
     <div class="container">
       <!-- Title and description -->
       <div class="title-description">
-        <h1>Animal Avatar Generator</h1>
-        <p>Need a profile picture? Take our quiz and find your personalized animal avatar.</p>
+        <h1>The Wild Avatar Kingdom</h1>
+        <p>Need a profile picture? Take our quiz and find your personalized animal avatar!</p>
       </div>
     </div>
 
@@ -49,9 +49,10 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="7" class="ind-num">8</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="8" class="ind-num">9</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="9" class="ind-num">End</li>
-            <div class="reset-button">
+ <!--           <div class="reset-button">
               <button type="button" class="btn btn-outline-dark" onClick="window.location.reload();">Reset</button>
             </div>
+-->
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -187,13 +188,37 @@
           </a>
         </div>
       </div>
-
-      <div class="donation">
-        <p>Had a good experience? Consider donating to the World Wildlife Fund!</p>
-        <button type="button" class="btn btn-outline-dark">Donate</button>
+    
+<!-- RESET BUTTONS -->    
+    <div class="play-again" id="play-again">
+       <form>
+        <p>Would you like to try the quiz again?</p>
+          <input id="rd1" type="radio" value="yes">Yes</input><br/>
+          <input id="rd2" type="radio" value="no">No</input><br/>
+          <button onclick="fn1()" id="btn1">Submit</button>
+        </form>
       </div>
+      <script>
+            /*document.getElementById("play-again").style.visibility = "hidden";*/
+            function fn1() {
+            var rd1 = document.getElementById("rd1");
+            var rd2 = document.getElementById("rd2");
+
+            if(rd1.checked==true) 
+              document.getElementById("home").reset();
+            else if(rd2.checked==true)
+              document.write("Your avatar looks amazing! You can download your new avatar here");
+            else
+                alert ("please choose yes or no");}              
+      </script>
     </div>
 
+    <div class="donation">
+        <p>Had a good experience? Consider donating to the World Wildlife Fund!</p>
+        <a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">
+        <button type="button" class="btn btn-outline-dark">Donate</button></a>
+      </div>
+    </div>
 
   <!-- Javascript file -->
   <script src="main.js"></script>

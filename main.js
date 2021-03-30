@@ -1,5 +1,5 @@
 //Generate Random numbers
-var nums = [0,1,2,3,4,5,6,7,8],
+var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
     ranNums = [],
     i = nums.length,
     j = 0;
@@ -7,69 +7,94 @@ var nums = [0,1,2,3,4,5,6,7,8],
 while (i--) {
     j = Math.floor(Math.random() * (i+1));
     ranNums.push(nums[j]);
-    nums.splice(j,1);
+    nums.splice(j,1); 
 }
 
 
 //Questions and answers arrays
 var questions = [
-  "What is your favorite way to travel?",
-  "What's your favorite season of the year?",
-  "How do you prefer to dine?",
-  "Choose your favorite meal:",
-  "Let's get some exercise! Choose an activity:",
-  "What are you most likely to eat after a stressful day?",
-  "When you have something exciting to share, how do you tell people?",
-  "Who is your ideal mentor?",
-  "How would you describe your perfect home?"
+  "The world's GIANT CREATURES are in a fight for domination! Which one do YOU want to WIN?",
+  "What famous MOVIE character best describes YOU?",
+  "How would you describe your PERFECT home environment?",
+  "Let's get some heavy EXERCISE! Choose an activity!",
+  "How would your FRIENDS best DESCRIBE you?",
+  "HOW you eat is just as important as WHAT you eat! SO, HOW do you EAT?",
+  "How do you typically react to STRESSFUL SITUATIONS?",
+  "What is your FAVORITE way to TRAVEL?",
+  "What's your favorite SEASON of the year?",
+  "CHOOSE your favorite MEAL:",
+  "What are you most likely to EAT after a STRESSFUL day?",
+  "When you have something EXCITING to share, how do you TELL people?",
+  "Who is your IDEAL MENTOR?",
+  "How would you describe your PERFECT HOME?"
 ];
 // //
 var aAnswers = [
-  "airplane",
-  "Spring",
-  "at a restaurant",
-  "steak, rare",
-  "skiing",
-  "nothing",
-  "I jump around",
-  "Kermit the Frog",
-  "Waterfront property"
+  "Godzilla",
+  "Dr. Hannibal Lecter",
+  "Tropical Island",
+  "Sunbathing (really??)",
+  "Clever and cunning",
+  "Fast. I barely taste food.",
+  "Use techniques like meditation to stay calm.",
+  "Train",
+  "Summer",
+  "Steak, rare",
+  "Nothing",
+  "I keep it to myself",
+  "Professor Snape",
+  "Plenty of windows and light"
 ];
 //
 var bAnswers = [
-  "boat",
-  "Summer",
-  "takeout",
-  "all greens, please",
-  "surfing",
-  "vegan grilled cheese",
-  "I keep it to myself",
-  "Mark Zuckerberg",
-  "Very tidy"
+  "King Kong",
+  "The Incredible Hulk",
+  "Cozy mountain lodge",
+  "Distance running",
+  "Social and protective",
+  "I prefer sharing my dining experiences with friends and family.",
+  "Call my friends and vent my frustration.",
+  "Bicycle or Walk",
+  "Winter",
+  "I prefer a balanced meal",
+  "Some berries or salmon",
+  "I grab everyone's attention",
+  "Mufasa the Lion",
+  "Underground bunker"
 ];
 //
 var cAnswers = [
-  "car",
+  "Mothra",
+  "Wonder Woman",
+  "Top floor penthouse",
+  "Trampoline!",
+  "Courageous and proud",
+  "Usually fast, but I often can't eat too much.",
+  "Usually, I just sit and think it through, I'll come up with a solution.",
+  "Airplane",
   "Autumn",
-  "delivery",
-  "seafood",
-  "boxing",
-  "something sweet",
-  "I grab everyone's attention",
-  "Professor Dumbledore",
-  "Cozy and warm"
+  "All greens, please",
+  "Vegan grilled cheese",
+  "I spread the news like crop disease",
+  "Doctor Strange",
+  "Treehouse"
 ];
 //
 var dAnswers = [
-  "bicylce or walk",
-  "Winter",
-  "cook at home",
-  "I prefer a balanced meal",
-  "trampoline",
-  "everything in sight",
-  "I spread the news like crop disease",
-  "Beyonce",
-  "Kind of messy but has a good view"
+  "The Megalodon",
+  "Jaws",
+  "Boathouse on the river",
+  "Swimming",
+  "Quick and adaptable",
+  "I'm already thinking of my next meal.",
+  "I just go with the flow, y'know? Not much bothers me.",
+  "Boat",
+  "Spring",
+  "Seafood",
+  "Everything in sight",
+  "I jump around",
+  "Kermit the Frog",
+  "Waterfront property"
 ];
 
 
@@ -324,3 +349,4 @@ function check(){
   document.getElementById("explanation").innerHTML = animalType[type];
   // document.getElementById("picture").src = pictures[score];
 }
+
