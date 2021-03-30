@@ -38,17 +38,17 @@
 
 .quiz-carousel {
   border: 3px solid black;
-  margin: 2rem 14rem;
+  margin: 2rem 10rem;
 }
 
 .question {
   margin: auto;
-  padding: 4rem;
-  width: 24rem;
+  padding: 6rem;
+  width: 40rem;
   height: 28rem;
 }
 
-.conclusion {
+#conclusion {
   margin: auto;
   padding: 4rem;
   width: 24rem;
@@ -85,8 +85,8 @@
   background-color: #11f680;
 }
 
-.reset-button {
-  margin-left: 1.3rem;
+.play-again {
+  text-align: center;
 }
 
 /* Donate Section */
