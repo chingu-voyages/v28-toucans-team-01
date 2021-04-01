@@ -1,5 +1,6 @@
 /* Navbar */
 /* remember that we are using ml-auto in the div with the links to align the links on the right side of the navbar*/
+
 #home {
   margin-left: 4rem;
 }
@@ -83,6 +84,7 @@
   font-size: 20px;
   color: white;
   z-index: 2;
+
 }
 
 .carousel-control-prev i {
@@ -118,6 +120,7 @@
 .play-again {
   margin: 10px;
   text-align: center;
+
 }
 
 /* Donate Section */
