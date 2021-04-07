@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, intial-scale=1">
-	<title>About Us</title>
-	<link rel="stylesheet" href="aboutus.css">
-</head>
-<body>
-	<img src="https://images.unsplash.com/photo-1535968881874-0c39f1503640?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGp1bmdsZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animal Avatar Generator</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- font awesome CDN  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" id="home" href="index.html">LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
 
+          <a class="nav-item nav-link active" id="about" href="aboutus.html"><b>About Us</b><span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" id="share"><b>Share on</b>
+            <a href="https://www.facebook.com" class="fab fa-facebook" id="social"></a>
+            <a href="https://www.twitter.com" class="fab fa-twitter" id="social"></a>
+            <a href="https://www.instagram.com" class="fab fa-instagram" id="social"></a>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About us/Game intro page-->
 	<div class="container">
-		<center>
-			<h1>About Us...</h1><br/>
-			<p>We are Team Toucans 1!<br/><br/>
-			A talented team of designers and developers who are eager to bring high-quality applications and serivces to our clients."
-			<br/><br/>
-			This includes non-profit companies like<br/>
-			the World Wildlife Fund,<br/>
-			who are among the world leaders in the conservation and protection of wlidlife.</p>
-		</center>
+			<h1>LOGO</h1>
+			<p>Our app allows you to <span class="blue-text">reveal your spirit animal.</span></p><br>
+			<p>We created this app to give users the option to find a <span class="blue-text">social media-friendly avatar</span> that isn't the traditional photo of oneself.</p><br>
+			<p>Find your spirit animal and play the <span class="blue-text">Wild Avatar Kingdom!</span></p>
+	</div>
 
-		<div class="donation">
-			<a href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">
-				<button>DONATE</button></a>
-		</div>
-
-		<div class="returnhome">
-			<a href="index.html">
-				<button>HOME</button></a>
-		</div>
-	</div>	
+	<!-- FOOTER-DONATION BUTTON -->
+	<footer>
+        <a class="footer" id="donate" href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">Have fun with our app? If so, consider "tipping" us by donating to the <i>World Wildlife Fund!</i></a>
+	</footer>
 </body>
 </html>

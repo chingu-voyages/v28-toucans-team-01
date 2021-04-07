@@ -1,3 +1,4 @@
+
 //Generate Random numbers
 var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
     ranNums = [],
@@ -7,7 +8,7 @@ var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
 while (i--) {
     j = Math.floor(Math.random() * (i+1));
     ranNums.push(nums[j]);
-    nums.splice(j,1); 
+    nums.splice(j,1);
 }
 
 
@@ -328,7 +329,19 @@ function check(){
 
 
   // // determine animal
-  var animalType = ["You're an amphibian!", "You're a reptile!", "You're a bird!", "You're a mammal!"];
+  var animalMessage = ["You're a bird!", "You're made for the water!", "You're a mammal!", "You're a reptile!"];
+
+  var animalType = [
+    //birds [0]
+    ["IMAGES/birds/eagle.jpg", "IMAGES/birds/owl.jpg", "IMAGES/birds/peacock.jfif", "IMAGES/birds/penguin.jfif"],
+    //fish and amphibians [1]
+    ["IMAGES/fish/frog.jfif", "IMAGES/fish/manta-ray.jpg","IMAGES/fish/salamander.jpg", "IMAGES/fish/shark.jpg"],
+    //mammals [2]
+    ["IMAGES/mammals/bear.jfif", "IMAGES/mammals/elephant.jpg", "IMAGES/mammals/gorilla.jpg", "IMAGES/mammals/wolf.jfif"],
+    //reptiles [3]
+    ["IMAGES/reptiles/alligator.jpg", "IMAGES/reptiles/iguana.jfif", "IMAGES/reptiles/snake.jfif", "IMAGES/reptiles/tortoise.jpg"]
+  ];
+
   var max = Math.max(aChosen, bChosen, cChosen, dChosen);
   var type;
 
@@ -346,6 +359,10 @@ function check(){
 
 
   document.getElementById("submitButton").style.visibility = "hidden";
-  document.getElementById("explanation").innerHTML = animalType[type];
-  // document.getElementById("picture").src = pictures[score];
+  document.getElementById("animalMessage").innerHTML = animalMessage[type];
+
+  randImg = Math.floor(Math.random() * 4 );
+  document.getElementById("animalImage").src = animalType[type][randImg];
+
+
 }
