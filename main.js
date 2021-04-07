@@ -328,7 +328,7 @@ function check(){
 
 
   // // determine animal
-  var animalType = ["You're an amphibian!", "You're a reptile!", "You're a bird!", "You're a mammal!"];
+  var animalType = [reptiles, mammals, birds, fish];
   var max = Math.max(aChosen, bChosen, cChosen, dChosen);
   var type;
 
@@ -343,9 +343,13 @@ function check(){
   } else {
     alert("Error.");
   }
-
-
-  document.getElementById("submitButton").style.visibility = "hidden";
-  document.getElementById("explanation").innerHTML = animalType[type];
-  // document.getElementById("picture").src = pictures[score];
 }
+
+function reveal() {
+  document.getElementById("animalName").innerHTML = animalType[type];
+  document.getElementById("picture").src = pictures[score];
+  //document.getElementById("submitButton").style.visibility = "hidden";
+  document.getElementById("explanation").innerHTML = animalType[type];
+  
+}
+
