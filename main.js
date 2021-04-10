@@ -7,7 +7,7 @@ var nums = [0,1,2,3,4,5,6,7,8,9,10,11,12,13],
 while (i--) {
     j = Math.floor(Math.random() * (i+1));
     ranNums.push(nums[j]);
-    nums.splice(j,1); 
+    nums.splice(j,1);
 }
 
 
@@ -328,7 +328,38 @@ function check(){
 
 
   // // determine animal
-  var animalType = [reptiles, mammals, birds, fish];
+  var animalMessage =  [
+    //reptiles [0]
+    ["an ALLIGATOR!", "an IGUANA!", "a SNAKE!", "a TORTOISE!"],
+    //mammals [1]
+    ["a BEAR!", "an ELEPHANT!", "a GORILLA!", "a WOLF!"],
+    //birds [2]
+    ["an EAGLE!", "an OWL!", "a PEACOCK!", "a PENGUIN!"],
+    //fish and amphibians [3]
+    ["a FROG!", "a MANTA RAY!", "a SALAMANDER!", "a SHARK!"]];
+
+  var animalType = [
+    //reptiles [0]
+    ["Avatar_Images/alligator.jpg", "Avatar_Images/iguana.jpg", "Avatar_Images/snake.jpg", "Avatar_Images/tortoise.jpg"],
+    //mammals [1]
+    ["Avatar_Images/bear.jpg", "Avatar_Images/elephant.jpg", "Avatar_Images/gorilla.jpg", "Avatar_Images/wolf.jpg"],
+    //birds [2]
+    ["Avatar_Images/eagle.jpg", "Avatar_Images/owl.jpg", "Avatar_Images/peacock.jpg", "Avatar_Images/penguin.jpg"],
+    //fish and ampphibians [3]
+    ["Avatar_Images/frog.jpg", "Avatar_Images/manta-ray.jpg","Avatar_Images/salamander.jpg", "Avatar_Images/shark.jpg"]];
+
+  var animalBackground = [
+    //reptiles [0]
+    ["Avatar_Images/alligator.jpg", "Avatar_Images/iguana.jpg", "Avatar_Images/snake.jpg", "Avatar_Images/tortoise.jpg"],
+    //mammals [1]
+    ["Avatar_Images/bear.jpg", "Avatar_Images/elephant.jpg", "Avatar_Images/gorilla.jpg", "Avatar_Images/wolf.jpg"],
+    //birds [2]
+    ["Avatar_Images/eagle.jpg", "Avatar_Images/owl.jpg", "Avatar_Images/peacock.jpg", "Avatar_Images/penguin.jpg"],
+    //fish and ampphibians [3]
+    ["Avatar_Images/frog.jpg", "Avatar_Images/manta-ray.jpg","Avatar_Images/salamander.jpg", "Avatar_Images/shark.jpg"]];
+
+
+
   var max = Math.max(aChosen, bChosen, cChosen, dChosen);
   var type;
 
@@ -343,13 +374,13 @@ function check(){
   } else {
     alert("Error.");
   }
-}
 
-function reveal() {
-  document.getElementById("animalName").innerHTML = animalType[type];
-  document.getElementById("picture").src = pictures[score];
-  //document.getElementById("submitButton").style.visibility = "hidden";
-  document.getElementById("explanation").innerHTML = animalType[type];
-  
+  document.getElementById("submitButton").style.visibility = "hidden";
+  document.getElementById("carousel-indicators").style.visibility = "hidden";
+  randMsg = Math.floor(Math.random() * 4 );
+  randImg = Math.floor(Math.random() * 4 );
+  randBgd = Math.floor(Math.random() * 4 );
+  document.getElementById("animalMessage").innerHTML = animalMessage[type][randImg];  
+  document.getElementById("animalImage").src = animalType[type][randImg];
+  document.getElementById("animalBackground").src = animalBackground[type][randImg];
 }
-
