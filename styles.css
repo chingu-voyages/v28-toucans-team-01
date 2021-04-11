@@ -3,6 +3,11 @@ nav {
   background-color: #F5F5F5;
 }
 
+nav {
+  height: 80px;
+  background-color: #F5F5F5;
+}
+
 #home {
   margin-left: 4rem;
 }
@@ -37,7 +42,6 @@ nav {
 #social:hover {
   color: #11f680;
 }
-
 
 
 /* carousel */
@@ -75,62 +79,52 @@ nav {
   height: 24rem;
   }
 
-
 /* Conclusion Slide */
-
 #conclusion {
-  display: flex;
-  flex-direction: column;
-  width: 40rem;
-  height: 24rem;
-  justify-content: center;
-  align-content: center;
-}
-
-#conclusion p {
-  margin-top: 10px;
-  z-index: 4;
-}
-
-#animalMessage  {
-  margin-top: 10px;
-  z-index: 4;
-}
-
-#animalType {
-  width: 225px;
-  height: 225px;
-  object-fit: contain;
-  z-index: 4;
-}
-
-#animalBackground {
-  display: flex;
-  width: 774px;
+  position: relative;
+  width: 773px;
   height: 394px;
+}
+
+#animalMessage {
+  position: absolute;
+  z-index: 3;
+  left: 300px;
+  top: 20px;
+}
+
+#animalImage {
   position: absolute;
   z-index: 2;
+  top: 70px;
+  left: 274.5px;
 }
 
-#download {
-  border: border-box;
+#backgroundImage {
+  position: absolute;
+  z-index: 1;
+}
+
+#playAgainButton {
+  position: absolute;
   z-index: 4;
+  top: 340px;
+  left: 350px;
 }
 
-#reset {
+#shuffleMessage {
+  position: absolute;
   z-index: 4;
+  top: 305px;
+  left: 190px;;
+}
+
+#submitButton {
+  display: none;
 }
 
 
-
-.carousel-control-prev i {
-  color: black;
-}
-.carousel-control-next i {
-  color: black;
-} 
-
-/*Carousel Indicator Numbers*/
+/* Carousel Indicator Numbers*/
 .carousel-indicators-numbers .ind-num {
   color: black;
   font-size: 20px;
@@ -138,7 +132,6 @@ nav {
   text-indent: 0;
   text-align: center;
   line-height: 30px;
-  /* margin: 0 2px; */
   margin: 0 2px 40px;
   width: 30px;
   height: 30px;
@@ -155,11 +148,11 @@ nav {
 }
 
 
-
 /* Bottom */
 .how-to-paragraph {
   text-align: center;
   margin: 20px 0 20px 0;
+  padding-bottom: 5rem;
   font-weight: bolder;
 }
 
@@ -183,3 +176,4 @@ footer {
   font-weight: bold;
   color: white;
 }
+

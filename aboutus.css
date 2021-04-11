@@ -23,7 +23,7 @@ nav {
 }
 
 #share {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   font-size: 20px;
   color: black;
 }
@@ -38,7 +38,6 @@ nav {
 #social:hover {
   color: #11f680;
 }
-
 
 /* page body*/
 
