@@ -1,5 +1,7 @@
-/* Navbar */
-/* remember that we are using ml-auto in the div with the links to align the links on the right side of the navbar*/
+nav {
+  height: 80px;
+  background-color: #F5F5F5;
+}
 
 nav {
   height: 80px;
@@ -25,21 +27,22 @@ nav {
 }
 
 #share {
-  margin-right: 0.5rem;
+  margin-right: .5rem;
   font-size: 20px;
   color: black;
 }
 
 #social {
-  width: 25px;
+  font-size: 25px;
   margin-top: .75rem;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
   color: black;
 }
 
 #social:hover {
   color: #11f680;
 }
+
 
 /* carousel */
 .title {
@@ -74,8 +77,7 @@ nav {
   padding: 2rem;
   width: 40rem;
   height: 24rem;
-}
-
+  }
 
 /* Conclusion Slide */
 #conclusion {
@@ -139,11 +141,12 @@ nav {
   transition: all 0.25s ease;
 }
 .carousel-indicators-numbers li.active, .carousel-indicators-numbers li:hover {
-  margin: 0 2px;
-  width: 30px;
-  height: 30px;
+  margin: 0 2px 4px;
+  width: 40px;
+  height: 40px;
   background-color: #0066ff;
 }
+
 
 /* Bottom */
 .how-to-paragraph {
@@ -173,3 +176,4 @@ footer {
   font-weight: bold;
   color: white;
 }
+

@@ -388,7 +388,6 @@ function check(){
     alert("Error.");
   }
 
-
   randImg = Math.floor(Math.random() * 4 );
 
   document.getElementById("animalMessage").innerHTML = animalMessage[type][randImg];
@@ -398,6 +397,5 @@ function check(){
   document.querySelector("#carouselExampleIndicators > ol").style.visibility = "hidden";
 
   // document.getElementById("downloadImage").href = animalType[type][randImg];
-
 
 }

@@ -17,7 +17,8 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" id="home" href="index.html">LOGO</a>
+      <a class="navbar-brand" id="home" href="index.html"><img src="C:\Users\mafm2\Desktop\v28-toucans-team-01\Avatar_Images\smallwhale.png"></a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,8 +52,8 @@
     <div class="container">
       <div class="quiz-carousel">
         <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel" data-wrap="false">
-          <ol class="carousel-indicators carousel-indicators-numbers">
-            <li id="test" data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind-num">1</li>
+          <ol class="carousel-indicators carousel-indicators-numbers" id="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind-num">1</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1" class="ind-num">2</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2" class="ind-num">3</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3" class="ind-num">4</li>
@@ -86,7 +87,6 @@
                   <input type="radio" name="question2" value="c"> <span id="twoC"></span> <br>
                   <input type="radio" name="question2" value="d"> <span id="twoD"></span> <br>
                 </form>
-
               </div>
             </div>
 
@@ -174,19 +174,12 @@
               </div>
             </div>
 
+            <!-- CONCLUSION SLIDE -->
             <div class="carousel-item">
               <div id="conclusion">
                 <p id="animalMessage"></p>
                 <img id="animalImage">
                 <img id="backgroundImage">
-                <!-- DOWNLOAD and RESET BUTTONS -->
-                <!-- <div class="row">
-                  <div class="column" id="download">
-                    <p>Would you like to download your new avatar?</p>
-                    <a id="downloadImage" download>
-                      <button type="button" class="btn btn-outline-dark">Download</button>
-                    </a>
-                  </div> -->
                   <div class="column">
                     <p id="shuffleMessage">...or shuffle the questions and play again</p>
                     <button id="playAgainButton" type="button" class="btn btn-outline-dark" onClick="window.location.reload();">Reset</button>
@@ -205,23 +198,24 @@
     </div>
 
   <div class="how-to-paragraph">
-  <p>How-To: This app uses personality-based questions to generate an animal avatar!<br>
-  Simply answer the 9 questions above to reveal your spirit animal.</p>
-</div>
+    <p>How-To: This app uses personality-based questions to generate an animal avatar!<br>
+      Simply answer the 9 questions above to reveal your spirit animal.</p>
+  </div>
 
 <!-- FOOTER-DONATION BUTTON -->
-<footer>
-      <a class="footer" id="donate" href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">Have fun with our app? If so, consider "tipping" us by donating to the <i>World Wildlife Fund!</i></a>
-</footer>
+  <footer>
+        <a class="footer" id="donate" href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">Have fun with our app? If so, consider "tipping" us by donating to the <i>World Wildlife Fund!</i></a>
+  </footer>
 
-  <!-- Javascript files -->
-  <script src="main.js"></script>
-  <script src="slide.js"></script>
+    <!-- Javascript files -->
+    <script src="main.js"></script>
+    <script src="slide.js"></script>
 
-  <!-- Bootstrap JavaScript CDN -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   </body>
 </html>
+
