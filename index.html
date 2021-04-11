@@ -17,7 +17,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" id="home" href="index.html"><img src="C:\Users\mafm2\Desktop\v28-toucans-team-01\Avatar_Images\smallwhale.png"></a>
+      <a class="navbar-brand" id="home" href="index.html"><img src="images/largewhale.png"></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,15 +26,12 @@
         <div class="navbar-nav ml-auto">
 
           <a class="nav-item nav-link active" id="about" href="aboutus.html"><b>About Us</b><span class="sr-only">(current)</span></a>
-         <a class="nav-item nav-link" id="share"><b>Share on</b>
-           <a href="https://www.facebook.com" class="fab fa-facebook" id="social"></a>
-           <a href="https://www.twitter.com" class="fab fa-twitter" id="social"></a>
-           <a href="https://www.instagram.com" class="fab fa-instagram" id="social"></a>
-         </a>
+          <a class="nav-item nav-link" id="share"><b>Share</b></a>
+          <a href="https://www.facebook.com" class="fab fa-facebook social"></a>
+          <a href="https://www.twitter.com" class="fab fa-twitter social"></a>
+          <a href="https://www.instagram.com" class="fab fa-instagram social"></a>
 
-          <!-- <a class="nav-item nav-link active" id="about" href="aboutus.html">About Us<span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link active" id="donate" href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2104OQ18299A01180RX&_ga=2.234151006.1392802004.1616003625-2142709346.1616003625">Donate to World Wildlife Fund  <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" id="share" href="#">Share! <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></a> -->
+          <!-- <a class="nav-item nav-link" id="share" href="#">Share! <i class="fab fa-facebook"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></a> -->
         </div>
       </div>
     </nav>
@@ -177,10 +174,11 @@
             <!-- CONCLUSION SLIDE -->
             <div class="carousel-item">
               <div id="conclusion">
+                <p id="finishMessage">Finish the quiz to reveal your animal avatar!</p>
                 <p id="animalMessage"></p>
                 <img id="animalImage">
                 <img id="backgroundImage">
-                  <div class="column">
+                  <div id="reset">
                     <p id="shuffleMessage">...or shuffle the questions and play again</p>
                     <button id="playAgainButton" type="button" class="btn btn-outline-dark" onClick="window.location.reload();">Reset</button>
                   </div>
@@ -218,4 +216,3 @@
 
   </body>
 </html>
-

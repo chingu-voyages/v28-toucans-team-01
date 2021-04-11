@@ -3,23 +3,28 @@ nav {
   background-color: #F5F5F5;
 }
 
+/*logo*/
+#home img {
+  width: 35%;
+  height: 20%;
+}
+
 #home {
   margin-left: 1.5rem;
   margin-bottom: 2rem;
 }
 
 #home:hover {
-  color: #11f680;
+  color: #0066FF;
 }
 
 #about {
-  margin-right: 20rem;
   font-size: 20px;
   color: black;
 }
 
 #about:hover {
-  color: #11f680;
+  color: #0066FF;
 }
 
 #share {
@@ -28,15 +33,16 @@ nav {
   color: black;
 }
 
-#social {
+.social {
   font-size: 25px;
   margin-top: .75rem;
   margin-right: .5rem;
   color: black;
 }
 
-#social:hover {
-  color: #11f680;
+.social:hover {
+  color: #0066FF;
+  text-decoration: none;
 }
 
 /* page body*/

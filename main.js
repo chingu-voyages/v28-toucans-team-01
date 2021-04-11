@@ -363,13 +363,13 @@ function check(){
 
   var background = [
     //birds [0]
-    ["background_images/eaglebackground.png", "background_images/owlbackground.png", "background_images/peacockbackground.png", "background_images/penguinbackground.png"],
+    ["images/background_images/eaglebackground.png", "images/background_images/owlbackground.png", "images/background_images/peacockbackground.png", "images/background_images/penguinbackground.png"],
     //fish and amphibians [1]
-    ["background_images/frogbackground.png", "background_images/mantaraybackground.png","background_images/salamanderbackground.png", "background_images/sharkbackground.png"],
+    ["images/background_images/frogbackground.png", "images/background_images/mantaraybackground.png","images/background_images/salamanderbackground.png", "images/background_images/sharkbackground.png"],
     //mammals [2]
-    ["background_images/bearbackground.png", "background_images/elephantbackground.png", "background_images/gorillabackground.png", "background_images/wolfbackground.png"],
+    ["images/background_images/bearbackground.png", "images/background_images/elephantbackground.png", "images/background_images/gorillabackground.png", "images/background_images/wolfbackground.png"],
     //reptiles [3]
-    ["background_images/alligatorbackground.png", "background_images/iguanabackground.png", "background_images/snakebackground.png", "background_images/turtlebackground.png"]
+    ["images/background_images/alligatorbackground.png", "images/background_images/iguanabackground.png", "images/background_images/snakebackground.png", "images/background_images/turtlebackground.png"]
   ];
 
   // determine animal
@@ -393,6 +393,11 @@ function check(){
   document.getElementById("animalMessage").innerHTML = animalMessage[type][randImg];
   document.getElementById("animalImage").src = animalType[type][randImg];
   document.getElementById("backgroundImage").src = background[type][randImg];
+
+  //hide 'finish quiz' message 
+  document.getElementById("finishMessage").style.visibility = "hidden";
+  //reveal reset button
+  document.getElementById("reset").style.visibility = "visible";
   //hide slide indicator numbers
   document.querySelector("#carouselExampleIndicators > ol").style.visibility = "hidden";
 
