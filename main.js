@@ -71,7 +71,7 @@ var cAnswers = [
   "Trampoline!",
   "Courageous and proud",
   "Usually fast, but I often can't eat too much.",
-  "Usually, I just sit and think it through, I'll come up with a solution.",
+  "Usually, I just sit and think it through. I'll come up with a solution.",
   "Airplane",
   "Autumn",
   "All greens, please",
@@ -155,6 +155,16 @@ document.getElementById("nineA").innerHTML = aAnswers[ranNums[8]];
 document.getElementById("nineB").innerHTML = bAnswers[ranNums[8]];
 document.getElementById("nineC").innerHTML = cAnswers[ranNums[8]];
 document.getElementById("nineD").innerHTML = dAnswers[ranNums[8]];
+
+//last slide moves to conclusion slide
+var radios = document.forms["slide9"].elements["question9"];
+for(var i = 0, max = radios.length; i < max; i++) {
+    radios[i].onclick = function() {
+        $('#carouselExampleIndicators').carousel('next');
+        check();
+        // alert("Worked");
+    }
+}
 
 // Check quiz questions
 function check(){
@@ -328,20 +338,41 @@ function check(){
     }
 
 
-  // // determine animal
-  var animalMessage = ["You're a bird!", "You're made for the water!", "You're a mammal!", "You're a reptile!"];
+  // message, avatar, and background image arrays
+  var animalMessage = [
+    //birds [0]
+    ["You're an eagle!", "You're an owl!", "You're a peacock!", "You're a penguin!"],
+    //fish and amphibians [1]
+    ["You're a frog!", "You're a manta ray!","You're a salamander!", "You're a shark!"],
+    //mammals [2]
+    ["You're a bear!", "You're an elephant!", "You're a gorilla!", "You're a wolf!"],
+    //reptiles [3]
+    ["You're an alligator!", "You're an iguana!", "You're a snake!", "You're a turtle!"]
+  ];
 
   var animalType = [
     //birds [0]
-    ["IMAGES/birds/eagle.jpg", "IMAGES/birds/owl.jpg", "IMAGES/birds/peacock.jfif", "IMAGES/birds/penguin.jfif"],
+    ["images/birds/eagleavatar.png", "images/birds/owlavatar.png", "images/birds/peacockavatar.png", "images/birds/peguinavatar.png"],
     //fish and amphibians [1]
-    ["IMAGES/fish/frog.jfif", "IMAGES/fish/manta-ray.jpg","IMAGES/fish/salamander.jpg", "IMAGES/fish/shark.jpg"],
+    ["images/fish/frogavatar.png", "images/fish/mantarayavatar.png","images/fish/salamanderavatar.png", "images/fish/sharkavatar.png"],
     //mammals [2]
-    ["IMAGES/mammals/bear.jfif", "IMAGES/mammals/elephant.jpg", "IMAGES/mammals/gorilla.jpg", "IMAGES/mammals/wolf.jfif"],
+    ["images/mammals/bearavatar.png", "images/mammals/elephantavatar.png", "images/mammals/gorillaavatar.png", "images/mammals/wolfavatar.png"],
     //reptiles [3]
-    ["IMAGES/reptiles/alligator.jpg", "IMAGES/reptiles/iguana.jfif", "IMAGES/reptiles/snake.jfif", "IMAGES/reptiles/tortoise.jpg"]
+    ["images/reptiles/alligatoravatar.png", "images/reptiles/iguanaavatar.png", "images/reptiles/snakeavatar.png", "images/reptiles/turtleavatar.png"]
   ];
 
+  var background = [
+    //birds [0]
+    ["background_images/eaglebackground.png", "background_images/owlbackground.png", "background_images/peacockbackground.png", "background_images/penguinbackground.png"],
+    //fish and amphibians [1]
+    ["background_images/frogbackground.png", "background_images/mantaraybackground.png","background_images/salamanderbackground.png", "background_images/sharkbackground.png"],
+    //mammals [2]
+    ["background_images/bearbackground.png", "background_images/elephantbackground.png", "background_images/gorillabackground.png", "background_images/wolfbackground.png"],
+    //reptiles [3]
+    ["background_images/alligatorbackground.png", "background_images/iguanabackground.png", "background_images/snakebackground.png", "background_images/turtlebackground.png"]
+  ];
+
+  // determine animal
   var max = Math.max(aChosen, bChosen, cChosen, dChosen);
   var type;
 
@@ -358,11 +389,15 @@ function check(){
   }
 
 
-  document.getElementById("submitButton").style.visibility = "hidden";
-  document.getElementById("animalMessage").innerHTML = animalMessage[type];
-
   randImg = Math.floor(Math.random() * 4 );
+
+  document.getElementById("animalMessage").innerHTML = animalMessage[type][randImg];
   document.getElementById("animalImage").src = animalType[type][randImg];
+  document.getElementById("backgroundImage").src = background[type][randImg];
+  //hide slide indicator numbers
+  document.querySelector("#carouselExampleIndicators > ol").style.visibility = "hidden";
+
+  // document.getElementById("downloadImage").href = animalType[type][randImg];
 
 
 }

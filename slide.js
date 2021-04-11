@@ -1,4 +1,5 @@
 //Move slide to next question after clicking radio button
+
 var radios = document.forms["slide1"].elements["question1"];
 for(var i = 0, max = radios.length; i < max; i++) {
     radios[i].onclick = function() {
@@ -55,13 +56,6 @@ for(var i = 0, max = radios.length; i < max; i++) {
 }
 
 var radios = document.forms["slide8"].elements["question8"];
-for(var i = 0, max = radios.length; i < max; i++) {
-    radios[i].onclick = function() {
-        $('#carouselExampleIndicators').carousel('next');
-        // alert("Worked");
-    }
-}
-var radios = document.forms["slide9"].elements["question9"];
 for(var i = 0, max = radios.length; i < max; i++) {
     radios[i].onclick = function() {
         $('#carouselExampleIndicators').carousel('next');

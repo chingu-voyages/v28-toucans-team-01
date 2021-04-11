@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- font awesome CDN  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
     <!-- Navbar -->
@@ -47,7 +52,7 @@
       <div class="quiz-carousel">
         <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel" data-wrap="false">
           <ol class="carousel-indicators carousel-indicators-numbers">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind-num">1</li>
+            <li id="test" data-target="#carouselExampleIndicators" data-slide-to="0" class="active ind-num">1</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1" class="ind-num">2</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2" class="ind-num">3</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3" class="ind-num">4</li>
@@ -56,7 +61,7 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="6" class="ind-num">7</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="7" class="ind-num">8</li>
             <li data-target="#carouselExampleIndicators" data-slide-to="8" class="ind-num">9</li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="9" class="ind-num">End</li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9" class="ind-num">?</li>
           </ol>
 
           <div class="carousel-inner">
@@ -171,10 +176,23 @@
 
             <div class="carousel-item">
               <div id="conclusion">
-                <p id="animalMessage"></p> <br>
+                <p id="animalMessage"></p>
                 <img id="animalImage">
+                <img id="backgroundImage">
+                <!-- DOWNLOAD and RESET BUTTONS -->
+                <!-- <div class="row">
+                  <div class="column" id="download">
+                    <p>Would you like to download your new avatar?</p>
+                    <a id="downloadImage" download>
+                      <button type="button" class="btn btn-outline-dark">Download</button>
+                    </a>
+                  </div> -->
+                  <div class="column">
+                    <p id="shuffleMessage">...or shuffle the questions and play again</p>
+                    <button id="playAgainButton" type="button" class="btn btn-outline-dark" onClick="window.location.reload();">Reset</button>
+                  </div>
+                </div>
                 <input class="btn btn-outline-dark" id="submitButton" type="button" value="Find Your Animal" onclick="check();">
-              </div>
             </div>
 
           <!-- carousel-inner -->
@@ -185,22 +203,6 @@
       </div>
     <!-- container -->
     </div>
-
-<!-- DOWNLOAD and RESET BUTTONS -->
-    <div class="row">
-      <div class="column" id="download">
-          <form>
-            <p>Would you like to download your NEW AVATAR?</p>
-              <input type="button" class="btn btn-outline-dark" value="DOWNLOAD"
-              onClick="window.location.href='C:/Users/mafm2/Desktop/v28-toucans-team-01/Avatar_Images/elephant.jpg'">
-          </form>
-      </div>
-      <div class="column" id="reset">
-        <p>Or try the quiz again?</p>
-        <button type="button" class="btn btn-outline-dark" onClick="window.location.reload();">RESET</button>
-      </div>
-    </div>
-  </div>
 
   <div class="how-to-paragraph">
   <p>How-To: This app uses personality-based questions to generate an animal avatar!<br>
